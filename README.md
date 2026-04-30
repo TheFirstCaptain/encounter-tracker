@@ -10,12 +10,18 @@ A local-first desktop app for tracking tabletop RPG parties, encounters, initiat
 - Run encounters with editable current hit points, incapacitated status, initiative, and draggable participant order.
 - Persist data locally across app sessions.
 
+## Prerequisites
+
+- Node.js 20.19+ or 22.12+
+- npm
+- Git, if cloning the repository
+
 ## Run Locally
 
 From the project directory:
 
 ```bash
-cd /Users/kirk/Code/encounter-tracker
+cd <path-to-encounter-tracker>
 npm install
 npm run dev
 ```
