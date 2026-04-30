@@ -2,7 +2,7 @@
 
 ## Project Goals
 
-- Build a simple desktop app for Game Masters and Dungeon Masters to track combat encounters.
+- Build a simple desktop app for Game Masters and Dungeon Masters to prepare and run combat encounters.
 - Replace paper-based tracking for initiative, hit points, and related encounter state.
 - Start with support for Dungeons & Dragons 5e workflows, while keeping the design flexible enough to expand to other systems later.
 - Persist data locally across app sessions.
@@ -19,10 +19,17 @@
 - Treat Windows support as optional.
 - Add automated tests around core encounter behavior, especially initiative order, hit point changes, turn advancement, and persistence logic.
 
-## First Slice
+## Current App Shape
 
-- Build a player management UI.
-- Show existing players.
-- Allow adding a new player by name.
-- Persist players locally so they remain across app sessions.
-- Keep theming out of scope until the player management slice is working.
+- Manage players.
+- Manage characters with owning players, game systems, max hit points, and current hit points.
+- Manage adventuring parties as reusable groups of same-system characters.
+- Set up encounters from an adventuring party, with optional allies and opponents.
+- Edit encounter setup before running.
+- Run encounters with editable current hit points, incapacitated tracking, initiative, and draggable participant order.
+
+## Near-Term Notes
+
+- Sessions are planned but not implemented yet.
+- Encounter run mode should remain fast to use during play, with minimal friction around initiative and hit point changes.
+- Future game systems should be able to add system-specific rules without rewriting the core entity model.
